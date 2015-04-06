@@ -90,6 +90,12 @@ body {
     border-bottom: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  h1 {
+    text-align: center;
+  }
+}
+
 .navbar-default {
   box-shadow: 0px 1px 10px 0px gray;
 }
@@ -103,6 +109,11 @@ body {
   top: 3px;
 }
 .bgcolor {
-  background-color: #4cae4c;
+  background-color: #5cb85c;
   padding-top: 1.2em;
+}
+.panel-success > .panel-heading {
+  color: white;
+  background-color: #5cb85c;
+  border-color: #d6e9c6;
 }
