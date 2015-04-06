@@ -279,15 +279,15 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 4474,
+				"buffer_size": 4604,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_carousel.scss",
+			"file": "app/robots.txt",
 			"settings":
 			{
-				"buffer_size": 4793,
+				"buffer_size": 32,
 				"line_ending": "Unix"
 			}
 		}
@@ -603,16 +603,15 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/Jason/Documents/GitHub/SaveYourAsh",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/app",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/app/images",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/app/scripts",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/app/styles",
-		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components/bootstrap-sass-official",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components/bootstrap-sass-official/assets",
 		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components/bootstrap-sass-official/assets/stylesheets",
-		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap",
-		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/test/bower_components"
+		"/C/Users/Jason/Documents/GitHub/SaveYourAsh/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap"
 	],
 	"file_history":
 	[
@@ -1010,15 +1009,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4474,
+						"buffer_size": 4604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1241,
-								1241
+								1288,
+								1288
 							]
 						],
 						"settings":
@@ -1090,7 +1089,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1098,19 +1097,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_carousel.scss",
+					"file": "app/robots.txt",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 4793,
+						"buffer_size": 32,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								32,
+								32
 							]
 						],
 						"settings":
@@ -1177,9 +1176,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1278,7 +1275,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\Jason\\Google Drive\\Development\\Personal_Sublime_Project.sublime-project"
+				"C:\\Users\\Jason\\Google Drive\\Development\\AuctionMN\\AuctionMN_ST_Project.sublime-project"
 			]
 		],
 		"width": 475.0
@@ -1300,7 +1297,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 310.0,
+	"side_bar_width": 382.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
