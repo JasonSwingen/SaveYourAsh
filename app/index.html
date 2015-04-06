@@ -24,48 +24,90 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Save Your Ash</a>
+          </div>
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Information</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">SaveYourAsh</h3>
-      </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#information">Information</a></li>        
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">XXX-XXX-XXXX</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
-      <div class="jumbotron">
+      <div id="home" class="jumbotron">
         <h1>Save Your Ash</h1>
-        <p class="lead">We Protect Your Trees from the Emerald Ash Borer.</p>
-        <p>Do you have trees with the Emerald Ash Borer? We can help.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Save My Ash! <span class="glyphicon glyphicon-ok"></span></a></p>
+        <p class="lead">Do you live in Minnesota and have trees with the Emerald Ash Borer?</p>
+        <p>Don't Wait!</p>
+        <p><a class="btn btn-lg btn-success" href="#">Save Your Ash! <span class="glyphicon glyphicon-tree-deciduous"></span></a></p>
       </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    
+    <div class="container">
+      
+      <div id="information">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+              <img src="http://www.rederlandscaping.com/wp-content/uploads/2012/06/Emerald-Ash-Borer.png" alt="...">
+              <div class="caption">
+                <h3>Emerald Ash Borer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptatem, animi suscipit veritatis culpa recusandae pariatur voluptate ab qui doloremque! Molestiae possimus eum, aspernatur provident omnis consectetur aliquid sequi consequatur.</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+              <img src="http://publicradio1.wpengine.netdna-cdn.com/updraft/files/2014/01/626-EmeraldAshBorer_lg.gif" alt="...">
+              <div class="caption">
+                <h3>Emerald Ash Borer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eius exercitationem placeat, quas necessitatibus, veniam soluta deserunt eos amet ipsa facere molestiae, deleniti, nihil illum voluptate tempora. Veritatis consequuntur, numquam!</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+              <img src="http://www.rederlandscaping.com/wp-content/uploads/2012/06/Emerald-Ash-Borer.png" alt="...">
+              <div class="caption">
+                <h3>Emerald Ash Borer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque magni iste numquam, ducimus quae provident tempora! Ab, autem mollitia molestias modi sunt eius voluptatibus voluptate, ducimus facere aliquid dolore.</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <div id="about">About</div>
+
+      <div id="testimonials">Testimonials</div>
+
+      <div id="contact">Contact</div>
+
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-user"></span> built by <a href="http://jasonswingen.com">Jason Swingen</a></p>
       </div>
 
-    </div>
+    </div> <!--End of -->
 
 
     <!-- build:js(.) scripts/vendor.js -->
