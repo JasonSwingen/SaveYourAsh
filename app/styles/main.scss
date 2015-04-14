@@ -68,9 +68,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 830px;
-  }
+  // .container {
+  //   max-width: 830px;
+  // }
 
   /* Remove the padding we set earlier */
   .header,
@@ -92,6 +92,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   h1 {
+    text-align: center;
+  }
+  .form-all{
     text-align: center;
   }
 }
@@ -116,4 +119,12 @@ body {
   color: white;
   background-color: #5cb85c;
   border-color: #d6e9c6;
+}
+
+// Contact Form
+.form-textarea, .form-textbox {
+  max-width: 100%;
+}
+.form-sub-label {
+  margin-top: 3px;
 }
