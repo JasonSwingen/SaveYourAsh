@@ -50,6 +50,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  padding: 100px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
@@ -64,6 +65,10 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+
+.post {
+  margin: 40px 40px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -97,6 +102,9 @@ body {
   .form-all{
     text-align: center;
   }
+  .post {
+    margin: 40px 10px;
+  }
 }
 
 .navbar-default {
@@ -108,6 +116,7 @@ body {
 .navbar-text {
   text-align: center;
 }
+
 .glyphicon {
   top: 3px;
 }
