@@ -1,4 +1,5 @@
 $(document).ready(function($) { // Start of Document Ready Javascript
+  
   // Smooth scrolling to sections
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -14,4 +15,14 @@ $(document).ready(function($) { // Start of Document Ready Javascript
       }
     });
   });
+
+  // Add pulse to element on mouseover
+  $(".phone").hover(
+    function () {
+      $(".glyphicon-earphone").addClass("pulse");
+    },
+    function () {
+      $(".glyphicon-earphone").removeClass("pulse");
+    }
+  );
 }); // End of Document Ready Javascript
