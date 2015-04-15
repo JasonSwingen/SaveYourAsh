@@ -37,6 +37,23 @@ body {
   }
 }
 
+p {
+  color: gray;
+}
+
+.paddingtop {
+  padding-top: 50px;
+}
+.paddingbottom {
+  padding-bottom: 1em;
+}
+.padding {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+.thumbnail {
+  // max-width: 300px;
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -50,12 +67,17 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  padding: 100px;
+  padding: 100px 10px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  // background-color: #5cb85c;
+  // p {
+  //   color: black;
+  // }
   .btn {
     font-size: 21px;
     padding: 14px 24px;
+    // color: #5cb85c;
   }
 }
 
@@ -107,6 +129,9 @@ body {
   }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #5cb85c;
+}
 .navbar-default {
   box-shadow: 0px 1px 10px 0px gray;
 }
@@ -120,9 +145,15 @@ body {
 .glyphicon {
   top: 3px;
 }
-.bgcolor {
+.bgsuccess {
   background-color: #5cb85c;
-  padding-top: 1.2em;
+  color: white;
+  p {
+    color: white;
+  }
+}
+.bgtwo {
+  background-color: #eeeeee;
 }
 .panel-success > .panel-heading {
   color: white;
@@ -136,4 +167,20 @@ body {
 }
 .form-sub-label {
   margin-top: 3px;
+}
+
+.pulse {
+  @include animation(pulse .1s infinite alternate ease-in-out);
+}
+
+@keyframes pulse {
+    0%   { 
+      -webkit-transform: rotate(6deg);
+    }
+    0% {
+      -webkit-transform: rotate(-6deg);
+    }
+    100% {
+      -webkit-transform: rotate(6deg);
+    }
 }
