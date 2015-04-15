@@ -25,4 +25,6 @@ $(document).ready(function($) { // Start of Document Ready Javascript
       $(".glyphicon-earphone").removeClass("pulse");
     }
   );
+
+
 }); // End of Document Ready Javascript
