@@ -36,11 +36,32 @@ body {
     padding-bottom: 19px;
   }
 }
-
 p {
   color: gray;
 }
-
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+  line-height: 2em;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
 .paddingtop {
   padding-top: 50px;
 }
@@ -67,7 +88,6 @@ p {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  padding: 100px 10px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   // background-color: #5cb85c;
@@ -114,7 +134,20 @@ p {
 
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
+    padding: 100px 10px;
     border-bottom: 0;
+    img {
+      position: absolute;
+      width: 250px;
+      top: 223px;
+      right: 75%;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      width: 300px;
+      top: 248px;
+      left: 75%;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -126,6 +159,18 @@ p {
   }
   .post {
     margin: 0px 10px;
+  }
+  .jumbotron {
+    padding: 100px 10px;
+    border-bottom: 0;
+    img {
+      position: relative;
+      width: 50%;
+      bottom: -100px;
+    }
+    img {
+      display: none;
+    }
   }
 }
 
