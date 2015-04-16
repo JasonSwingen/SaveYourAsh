@@ -113,6 +113,29 @@ blockquote:after {
   margin: 0px 40px;
 }
 
+.fixedbackground {
+  background: url("http://saveyourash.s3-website-us-west-2.amazonaws.com/images/Emerald_Ash_Borer_Damage.jpg");
+  min-height: 600px;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 40px 0px;
+  h1, h2, h3, p {
+    text-align: center;
+    color: white;
+    padding: 80px 10px 40px;
+    text-shadow: 2px 2px 7px black;
+  }
+  h2 {
+    font-size: 63px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   // .container {
@@ -140,13 +163,13 @@ blockquote:after {
       position: absolute;
       width: 250px;
       top: 223px;
-      right: 75%;
+      right: 68%;
     }
     img:nth-child(2) {
       position: absolute;
       width: 300px;
       top: 248px;
-      left: 75%;
+      left: 62%;
     }
   }
 }
@@ -170,6 +193,18 @@ blockquote:after {
     }
     img {
       display: none;
+    }
+  }
+  .fixedbackground {
+    margin: 40px 0px;
+    h1, h2, h3, p {
+      padding: 80px 20px 40px;
+    }
+      h2 {
+        font-size: 48px;
+    }
+      h3 {
+        font-size: 32px;
     }
   }
 }
@@ -219,14 +254,26 @@ blockquote:after {
 }
 
 .pulse {
-  @include animation(pulse .1s infinite alternate ease-in-out);
+  @include animation(pulse .3s infinite alternate ease-in-out);
+}
+.slideright {
+  @include animation(slideright 2s ease-in-out);
+  animation-delay: 2s;
+}
+.slideleft {
+  @include animation(slideleft 2s ease-in-out);
+  animation-delay: 2s;
+}
+.situp {
+  transform-origin: 50% 100%;
+  @include animation(situp 1.5s ease-in);
 }
 
 @-webkit-keyframes pulse {
     0%   { 
       -webkit-transform: rotate(6deg);
     }
-    0% {
+    50% {
       -webkit-transform: rotate(-6deg);
     }
     100% {
@@ -237,7 +284,7 @@ blockquote:after {
     0%   { 
       -webkit-transform: rotate(6deg);
     }
-    0% {
+    50% {
       -webkit-transform: rotate(-6deg);
     }
     100% {
@@ -248,7 +295,7 @@ blockquote:after {
     0%   { 
       -webkit-transform: rotate(6deg);
     }
-    0% {
+    50% {
       -webkit-transform: rotate(-6deg);
     }
     100% {
@@ -257,12 +304,47 @@ blockquote:after {
 }
 @keyframes pulse {
     0%   { 
-      -webkit-transform: rotate(6deg);
+      transform: rotate(6deg);
     }
-    0% {
-      -webkit-transform: rotate(-6deg);
+    50% {
+      transform: rotate(-6deg);
     }
     100% {
-      -webkit-transform: rotate(6deg);
+      transform: rotate(6deg);
+    }
+}
+
+@keyframes slideright {
+    0%   {
+      opacity: 0;
+      margin-left: 2000px;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0px;
+    }
+}
+@keyframes slideleft {
+    0%   {
+      opacity: 0;
+      margin-right: 2000px;
+    }
+    100% {
+      opacity: 1;
+      margin-right: 0px;
+    }
+}
+@keyframes situp {
+    0%   {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50%   {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
     }
 }
