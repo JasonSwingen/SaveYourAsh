@@ -1,9 +1,10 @@
 $(document).ready(function($) { // Start of Document Ready Javascript
-  
+ 'use strict';
+
   // Smooth scrolling to sections
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
@@ -17,14 +18,20 @@ $(document).ready(function($) { // Start of Document Ready Javascript
   });
 
   // Add pulse to element on mouseover
-  $(".phone").hover(
+  $('.phone').hover(
     function () {
-      $(".glyphicon-earphone").addClass("pulse");
+      $('.glyphicon-earphone').addClass('pulse');
     },
     function () {
-      $(".glyphicon-earphone").removeClass("pulse");
+      $('.glyphicon-earphone').removeClass('pulse');
     }
   );
 
+  // collapse mobile navigation menu on nav-link click
+  $('.nav-link').click(
+    function () {
+      $('.navbar-collapse').removeClass('in');
+    }
+  );
 
 }); // End of Document Ready Javascript
