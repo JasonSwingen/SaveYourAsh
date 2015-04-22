@@ -17,6 +17,9 @@ $(document).ready(function($) { // Start of Document Ready Javascript
     });
   });
 
+  // Scrollspy
+  $('body').scrollspy({ target: '#navbar' });
+
   // Add pulse to element on mouseover
   $('.phone').hover(
     function () {
