@@ -116,7 +116,7 @@ blockquote:after {
 
 .fixedbackground {
   background: url("http://saveyourash.s3-website-us-west-2.amazonaws.com/images/Emerald_Ash_Borer_Damage.jpg");
-  min-height: 600px;
+  min-height: 400px;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -126,7 +126,7 @@ blockquote:after {
   h1, h2, h3, p {
     text-align: center;
     color: white;
-    padding: 80px 10px 40px;
+    padding: 50px 10px 40px;
     text-shadow: 2px 2px 7px black;
   }
   h2 {
@@ -199,7 +199,7 @@ blockquote:after {
   .fixedbackground {
     margin: 40px 0px;
     h1, h2, h3, p {
-      padding: 80px 20px 40px;
+      padding: 50px 20px 0px;
     }
       h2 {
         font-size: 48px;
