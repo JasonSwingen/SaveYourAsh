@@ -13,7 +13,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 /* Space out content a bit */
 body {
   position: relative;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@ blockquote:after {
   vertical-align: -0.4em;
 }
 .paddingtop {
-  padding-top: 50px;
+  padding-top: 40px !important;
 }
 .paddingbottom {
   padding-bottom: 1em;
@@ -72,6 +72,11 @@ blockquote:after {
 .padding {
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+}
+.boxShadow {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0px 36px 22px -40px gray;
 }
 .thumbnail {
   // max-width: 300px;
@@ -99,6 +104,7 @@ blockquote:after {
     font-size: 21px;
     padding: 14px 24px;
     margin: 10px;
+    text-transform: uppercase;
     // color: #5cb85c;
   }
 }
@@ -117,13 +123,13 @@ blockquote:after {
 
 .fixedbackground {
   background: url("http://saveyourash.s3-website-us-west-2.amazonaws.com/images/Emerald_Ash_Borer_Damage.jpg");
-  min-height: 400px;
+  min-height: 500px;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 40px 0px;
+  margin: 20px 0px;
   h1, h2, h3, p {
     text-align: center;
     color: white;
@@ -137,7 +143,16 @@ blockquote:after {
     font-size: 48px;
   }
 }
-
+.brandname {
+  color: #5cb85c !important;
+  font-weight: 900;
+  font-stretch: ultra-expanded;
+  cursor: default;
+}
+.brandlead {
+  color: #000;
+  cursor: default;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   // .container {
@@ -159,10 +174,23 @@ blockquote:after {
 
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
-    padding: 100px 10px;
+    padding: 50px 10px;
     border-bottom: 0;
+    .brandname {
+      color: #5cb85c !important;
+      font-weight: 900;
+      font-stretch: ultra-expanded;
+      font-size: 10em !important;
+    }
+    .brandlead {
+      color: #000;
+      margin-top: -30px !important;
+      padding-left: 13px;
+      font-size: 1.8em !important;
+    }
     p {
-      margin: 0px 20% 15px;
+      margin: 15px auto;
+      max-width: 600px;
     }
     img {
       position: absolute;
@@ -189,8 +217,16 @@ blockquote:after {
     margin: 0px 10px;
   }
   .jumbotron {
-    padding: 100px 10px;
+    padding: 50px 10px;
     border-bottom: 0;
+    .brandname {
+      font-size: 8em !important;
+    }
+    .brandlead {
+      margin-top: -26px !important;
+      padding-left: 6px;
+      font-size: 1.4em !important;
+    }
     .btn {
       width: 90%;
     }
@@ -237,17 +273,6 @@ blockquote:after {
   font-stretch: ultra-expanded;
   font-size: 1.5em;
   margin-top: -3px;
-}
-.brandname {
-  color: #5cb85c !important;
-  font-weight: 900;
-  font-stretch: ultra-expanded;
-  font-size: 8.2em !important;
-}
-.brandlead {
-  color: #000;
-  margin-top: -25px !important;
-  // margin-left: 6px !important;
 }
 .fillscreen img {
   width: 100%;
@@ -374,4 +399,225 @@ blockquote:after {
       opacity: 1;
       transform: rotateX(0deg);
     }
+}
+
+// Animate.css
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.animationDelay1 {
+  animation-delay: 0.7s;
+}
+.animationDelay2 {
+  animation-delay: 1.1s;
+}
+.animationDelay3 {
+  animation-delay: 1.2s;
+}
+.animationDelay4 {
+  animation-delay: 2s;
 }
