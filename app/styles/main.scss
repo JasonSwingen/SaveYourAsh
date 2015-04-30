@@ -112,6 +112,12 @@ a[href^=tel]{
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+  }
 }
 
 .container-narrow > hr {
@@ -122,6 +128,7 @@ a[href^=tel]{
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  box-shadow: inset 0px -8px 20px -12px gray;
   // background-color: #5cb85c;
   // p {
   //   color: black;
@@ -156,8 +163,9 @@ a[href^=tel]{
   background-repeat: no-repeat;
   background-position: center center;
   margin: 20px 0px;
-  h1, h2, h3, p {
-    text-align: center;
+  text-align: center;
+  box-shadow: inset 0px 26px 16px -11px white, inset 0px -26px 16px -11px white;
+  h1, h2, h3, h4, p {
     color: white;
     padding: 50px 10px 40px;
     text-shadow: 2px 2px 7px black;
@@ -167,6 +175,15 @@ a[href^=tel]{
   }
   h3 {
     font-size: 48px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+    margin: 10px;
+    text-transform: uppercase;
   }
 }
 .brandname {
@@ -232,6 +249,7 @@ a[href^=tel]{
     }
   }
 }
+/* Responsive: Landscape tablets and down */
 @media screen and (max-width: 767px) {
   h1 {
     text-align: center;
@@ -270,8 +288,8 @@ a[href^=tel]{
   }
   .fixedbackground {
     margin: 40px 0px;
-    h1, h2, h3, p {
-      padding: 50px 20px 0px;
+    h1, h2, h3, h4, p {
+      padding: 40px 20px 20px;
     }
       h2 {
         font-size: 48px;
@@ -279,8 +297,25 @@ a[href^=tel]{
       h3 {
         font-size: 32px;
     }
+    .btn {
+      width: 90%;
+    }
+    .btn:last-of-type {
+      margin-bottom: 20px;
+    }
   }
-}
+  footer {
+    h4 {
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      li {
+
+      }
+    }
+  }
+} // End of Mobile Responsive
 .fillscreen img {
   width: 100%;
   height: 100%;
@@ -312,6 +347,21 @@ a[href^=tel]{
   margin-top: 3px;
 }
 
+// Modal Settings
+.modal-body {
+  p {
+    font-size: 1em;
+    text-align: left;
+    font-size: 0.8em;
+  }
+}
+form {
+  li.buttons {
+   input {
+    font-size: 2em !important;
+    }
+  }
+}
 .pulse {
   @include animation(pulse .3s infinite alternate ease-in-out);
 }
